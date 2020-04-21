@@ -30,24 +30,33 @@ class partida:
             cost += W_pinta
         return cost
 
-    def guanya(self, a, b, comencaH): # true si a guanya b
-        if a[1] == self.pinta[1] and b[1] != self.pinta[1]:
+    def guanyaIA(self, cartaIA, cartaH, comencaH): # true si IA guanya H
+        if cartaIA[1] == self.pinta[1] and cartaH[1] != self.pinta[1]:
             return True
-        elif a[1] != self.pinta[1] and b[1] == self.pinta[1]:
+        elif cartaIA[1] != self.pinta[1] and cartaH[1] == self.pinta[1]:
             return False
         else:
-            if comencaH and a[1] != b[1]:
+            if comencaH and cartaIA[1] != cartaH[1]:
                 return False
-            elif not comencaH and a[1] != b[1]:
+            elif not comencaH and cartaIA[1] != cartaH[1]:
                 return True
             else: # Si els pals son iguals
-                if self.prioritat_base[a[0]] > self.prioritat_base[b[0]]:
+                if self.prioritat_base[cartaIA[0]] > self.prioritat_base[cartaH[0]]:
                     return True
                 else:
                     return False
 
-    def benefici(self,cartaH,cartaIA):
-        pass
+    def benefici(self,cartaH,cartaIA,comencaH=False):
+        b = self.valorNumeros[cartaH[0]] + self.valorNumeros[cartaIA[0]]
+        if self.guanyaIA(cartaH,cartaIA,comencaH): # Si guanya l'humà
+            b = -b
+        return b
+
+    def h(self,comencaH,cartaIA,cartaH=None):
+        if comencaH:
+            h = self.cost(cartaIA)
+        else:
+            h = self.benefici(cartaH, cartaIA) * W_benefici + self.cost(cartaIA) * W_cost
 
     ############################################################# ALTRES FUNCIONS
     def el7laTreu(self, ma):
@@ -64,7 +73,5 @@ if __name__ == '__main__':
     p = partida(maInicial,(1,"Oros"))
     print(p.ma)
     print(p.pinta)
-    p.el7laTreu(p.ma)
-    print(p.ma)
-    print(p.pinta)
+    print(p.guanyaIA((12,"Oros"),(1,"Copes"),True))
 
