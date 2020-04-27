@@ -31,7 +31,7 @@ def sample_recognize(local_file_path):
     config = {
         "audio_channel_count" : audio_channel_count,
         "language_code": language_code,
-        "sample_rate_hertz": sample_rate_hertz,
+        # "sample_rate_hertz": sample_rate_hertz,
         "encoding": encoding,
     }
     with io.open(local_file_path, "rb") as f:
@@ -46,10 +46,10 @@ def sample_recognize(local_file_path):
         # First alternative is the most probable result
         alternative = result.alternatives[0]
         transcription += alternative.transcript
-        #print(u"Transcript: {}".format(alternative.transcript))
+        # print(u"Transcript: {}".format(alternative.transcript))
 
     return transcription
 
 
 if __name__ == '__main__':
-    print(sample_recognize('test.flac'))
+    print(sample_recognize('AudioTests/init.flac'))
