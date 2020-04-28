@@ -1,23 +1,13 @@
-import random
 ### Estructura de les cartes: (numero, pal). Pals com a strings.
 ##################### CONSTANTS:
 W_pinta = 10
 W_benefici = 9.5
 W_cost = 2
 
-def GenerarBaralla():
-    baralla = []
-    pals = ['b', 'e', 'o', 'c']
-    for pal in pals:
-        for i in range(1, 13):
-            baralla.append((i, pal))
-    return baralla
-
 
 class partida:
     ############################################################# ESTRUCTURA DE DADES
     def __init__(self): #, maInicial, pinta):
-        self.nCartesPila = 48
         #self.cartesJugades = [pinta]
         self.ma = []
         self.pinta = (0,'a')
@@ -64,17 +54,15 @@ class partida:
 
     def TriarCarta(self,comencaH,cartaH=None): #retorna l'índex de la carta seleccionada
         cartaSelec = 0
-        h_cartaSelec = self.h(comencaH,p.ma[0],cartaH)
-        for i,carta in enumerate(p.ma[1:]):
+        h_cartaSelec = self.h(comencaH,self.ma[0],cartaH)
+        for i,carta in enumerate(self.ma[1:]):
             h = self.h(comencaH,carta,cartaH)
             if h > h_cartaSelec:
                 h_cartaSelec = h
                 cartaSelec = i+1
         return cartaSelec
 
-
     ############################################################# ALTRES FUNCIONS
-
 
     def el7laTreu(self, ma):
         for i,carta in enumerate(ma):
@@ -85,55 +73,5 @@ class partida:
                 self.pinta, ma[i] = carta, self.pinta
                 print("El 2 la treu perquè un 7 ja ho és")
 
-def iniciarPartida(baralla):
-    p = partida()
-    # Robot agafa primera carta de la pila, la gira i la posa a l'slot de la pinta
-    p.pinta = baralla.pop()
-    # Robot agafa les 3 següents cartes de la pila i les posa a la seva ma
-    for i in range(3):
-        p.ma.append(baralla.pop())
-    p.nCartesPila -= 4
-    return p
 
-def pintarTaulellObert(p, maH): #anar ampliant
-    print("Ma de la IA: ", p.ma)
-    print("Pinta: ", p.pinta)
-    print("Ma del jugador: ", maH)
-
-def humaRoba(baralla,maH): # simulació de que l'humà roba una carta
-    maH.append(baralla.pop())
-
-
-def simulacioPartida():
-    baralla = GenerarBaralla()
-    random.shuffle(baralla)
-    p = iniciarPartida(baralla)
-
-    ### Dir a l'humà que roba tres cartes ###
-
-    # humà roba tres cartes
-    maHuma = []
-    for i in range(3):
-        humaRoba(baralla,maHuma)
-
-    pintarTaulellObert(p,maHuma)
-
-    # TODO:
-    # bucle de 1 , tenir un bool comencaH, amb un if que cobreixi tot el bucle,
-    # i faci coses diferents segons qui vagi primer
-
-
-if __name__ == '__main__':
-    """
-    maInicial = [(1,'b'),(1,'c'),(7,'o')]
-    p = partida(maInicial,(1,'o'))
-    print(p.ma)
-    print(p.pinta)
-    print(p.guanyaIA((12,'o'),(1,'c'),True))
-    p.el7laTreu(p.ma)
-    print(p.ma)
-    print(p.pinta)
-    print(p.TriarCarta(True,(5,'e')))
-    """
-    simulacioPartida()
 
