@@ -1,5 +1,9 @@
 import cv2
 import matplotlib.pyplot as plt
+from functools import reduce
+import operator
+import math
+from scipy.spatial import distance as dist
 import numberDetection
 import numpy as np
 import imutils
@@ -7,6 +11,14 @@ from imutils import contours
 
 CARD_MAX_AREA = 120000
 CARD_MIN_AREA = 20000
+
+
+def contourToTuple(cardContour):
+    l = []
+    for c in cardContour:
+        l.append((c[0][0], c[0][1]))
+
+    return l
 
 
 def detectCards(image):
@@ -73,25 +85,40 @@ def extractCards(image, cardContours, cardCorners):
     i = 0
     for contour in cardContours:
         rect = np.zeros((4, 2), dtype="float32")
+        cardCorners[i] = contourToTuple(cardCorners[i])
+        center = tuple(map(operator.truediv, reduce(lambda x, y: map(operator.add, x, y), cardCorners[i]), [len(cardCorners[i])] * 2))
+        cardCorners[i] = sorted(cardCorners[i], key=lambda coord: (-135 - math.degrees(
+            math.atan2(*tuple(map(operator.sub, coord, center))[::-1]))) % 360)
 
-        rect[0] = cardCorners[i][1][0]  # top left
-        rect[1] = cardCorners[i][0][0]  # top right
-        rect[2] = cardCorners[i][3][0]  # bot right
-        rect[3] = cardCorners[i][2][0]  # bot left
+        rect[0] = cardCorners[i][3]  # top left
+        rect[1] = cardCorners[i][2]  # top right
+        rect[2] = cardCorners[i][1]  # bot right
+        rect[3] = cardCorners[i][0]  # bot left
 
+        """
         # TODO: Check if cards are horizontal or vertical if vertical rotate
-        w = rect[1] - rect[0]
-        h = rect[2] - rect[3]
+        w = abs(rect[0][0] - rect[1][0])
+        h = abs(rect[0][1] - rect[3][1])
 
-        print(w,h)
+        if w > h:
+            aux = rect[0]
+            rect[0] = rect[3]
+            rect[3] = rect[2]
+            rect[2] = rect[1]
+            rect[1] = aux
 
+            w = abs(rect[0][0] - rect[1][0])
+            h = abs(rect[0][1] - rect[3][1])
+
+        print(w, h)
+        """
         x, y, w, h = cv2.boundingRect(contour)
 
         (tl, tr, br, bl) = rect
 
         maxWidth = 175
 
-        maxHeight = 210
+        maxHeight = 277
         # now that we have the dimensions of the new image, construct
         # the set of destination points to obtain a "birds eye view",
         # (i.e. top-down view) of the image, again specifying points
@@ -105,7 +132,7 @@ def extractCards(image, cardContours, cardCorners):
         # compute the perspective transform matrix and then apply it
         M = cv2.getPerspectiveTransform(rect, dst)
         warped = cv2.warpPerspective(image, M, (maxWidth, maxHeight))
-        #card = img[y:y + h, x:x + w]
+        # card = img[y:y + h, x:x + w]
 
         plt.imshow(warped)
         plt.show()
