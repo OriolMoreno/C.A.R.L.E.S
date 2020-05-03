@@ -5,7 +5,7 @@ def GenerarBaralla():
     baralla = []
     pals = ['b', 'e', 'o', 'c']
     for pal in pals:
-        for i in range(1, 4):
+        for i in range(1, 13):
             baralla.append((i, pal))
     return baralla
 
@@ -24,6 +24,9 @@ def pintarTaulellObert(p, maH,cartesTaula,baralla): #anar ampliant
     print("Cartes sobre la Taula: ", cartesTaula)
     print("Nombre de cartes a la pila:", len(baralla))
     print("Ma del jugador: ", maH)
+    print("###")
+    print("Punts H: ",p.puntsH)
+    print("Punts IA: ", p.puntsIA)
     print(" ")
 
 def humaRoba(baralla,maH): # simulació de que l'humà roba una carta
@@ -168,7 +171,7 @@ def simulacioPartidaObert():
     else:
         print("No m'agraden les trampes")
         return
-
+    pintarTaulellObert(p, maHuma, cartesSobreLaTaula, baralla)
 
 
 
