@@ -133,9 +133,10 @@ def extractCards(image, cardContours, cardCorners):
         M = cv2.getPerspectiveTransform(rect, dst)
         warped = cv2.warpPerspective(image, M, (maxWidth, maxHeight))
         # card = img[y:y + h, x:x + w]
-
+        cards.append(warped)
         plt.imshow(warped)
         plt.show()
 
         i += 1
-    return None
+
+    return cards
