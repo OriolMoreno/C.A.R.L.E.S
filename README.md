@@ -102,7 +102,10 @@ We finally separte from the prject a few parts and we have maded them a partt. T
 * The module of Computer Vision
 * The human interaction 
 * The realistic cinematic.
-![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/DiagramaModuls.png)
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/DiagramaModuls.png" align="right" width="300" alt="header pic"/>
+
+
+
 
 # Modules
 
