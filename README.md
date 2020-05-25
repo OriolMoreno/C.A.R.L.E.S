@@ -98,8 +98,11 @@ This is the exactly Hardware Shceme that we didn't make due to coronavirus but w
 
 # Software Architecture
 this is the software architecture of the project with the hardware components to, is not the ones we have finally done cause the changes of the evaluation method made us change a few thinks.
-We separte from the tree the module of Computer Vision, the human interaction and the realistic cinematic.
-
+We finally separte from the prject a few parts and we have maded them a partt. Thes are the parts we separate:
+* The module of Computer Vision
+* The human interaction 
+* The realistic cinematic.
+![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/DiagramaModuls.png)
 
 # Modules
 
