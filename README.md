@@ -1,12 +1,14 @@
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/UAB.png" align="center" width="300" alt="header pic"/>
+
 # C.A.R.L.E.S. Robotics Project
  Card-playing Algorithmic Robot for Leisure and Elder Socializing (C.A.R.L.E.S.)
- <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/UAB.png" align="center" width="300" alt="header pic"/>
+ 
 
 
 # Table of Contents
    * [What is this?](#what-is-this)
-   * [Requirements]
-   (#requirements)<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/FotoPortadaC.A.R.L.E.S.png" align="right" width="300" alt="header pic"/>
+   * [Requirements](#requirements)
+   <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/FotoPortadaC.A.R.L.E.S.png" align="right" width="300" alt="header pic"/>
    * [Documentation](#documentation)
    * [How to use](#how-to-use)
    * [Localization](#localization)
