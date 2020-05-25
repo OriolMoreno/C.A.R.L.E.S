@@ -11,12 +11,10 @@
    * [What is this?](#what-is-this)
    * [Requirements](#requirements)
    * [Documentation](#documentation)
-   * [How to use](#how-to-use)
-   * [Localization](#localization)
-      * [Extended Kalman Filter localization](#extended-kalman-filter-localization)
-      * [Particle filter localization](#particle-filter-localization)
-      * [Histogram filter localization](#histogram-filter-localization)
+   * [How to use](#how-to-use) 
    * [Description](#Description)
+   * [Hardware Scheme](#Hardware-Scheme)
+   * [Software Architecture](#Software-Architecture)
    * [MODULES](#modules)
       * [Kinematics](#kinematics)
       * [Ray casting grid map](#ray-casting-grid-map)
@@ -91,6 +89,16 @@ The main mechanism consists of a 3-axis anthropomorphic arm, which allows moveme
 - Calculate the angles of rotation of the arm motors in order to move the manipulator (including the one that controls the pressure of the suction cup) from one point to another, according to the movements that should be made in case of its physical creation. .
 - Unification of all the skills amended in a single workflow, which should be what the physical robot had.
 
+
+
+# Hardware Scheme
+This is the exactly Hardware Shceme that we didn't make due to coronavirus but we expect its wright.
+![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/carles_sketch_bb.png)
+
+
+# Software Architecture
+this is the software architecture of the project with the hardware components to, is not the ones we have finally done cause the changes of the evaluation method made us change a few thinks.
+We separte from the tree the module of Computer Vision, the human interaction and the realistic cinematic.
 
 
 # Modules
