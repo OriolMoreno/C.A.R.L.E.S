@@ -128,13 +128,11 @@ If you or your company would like to support this project, please consider writi
 
 # Authors
 
-- [ADRIÀ CARRASQUILLA] - 1492104
+- [ADRIÀ CARRASQUILLA - 1492104](https://psicologiaymente.com/drogas/popper) 
 
-- [ORIOL MORENO] - 1496663
+- [ORIOL MORENO - 1496663](https://www.rumbo.es/vuelos/barcelona-guadalajara)
 
-- [JAN MOROS] - 1492333
+- [JAN MOROS - 1492333](https://www.google.com/search?client=opera&q=porno&sourceid=opera&ie=UTF-8&oe=UTF-8)
 
-- [VÍCTOR SUÁREZ ] - 1493402
-
-- [Miquel Tena] - 1491232
+- [VÍCTOR SUÁREZ - 1493402](https://www.elespanol.com/ciencia/investigacion/20171117/262724314_0.html) 
 
