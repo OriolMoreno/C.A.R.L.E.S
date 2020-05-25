@@ -28,7 +28,8 @@ The poroject is prepared if some of the readers like you want to continue with C
 
 Take a look at description part to know more about what C.A.R.L.E.S exactly is capable.
 
-And download this exe to see a soo realistic simulation of C.A.R.L.E.S(#https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/simulation.exe)
+To take the first contact download this exe to see a soo realistic simulation of C.A.R.L.E.S:
+https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/simulation.exe
 
 
 # Requirements
@@ -65,14 +66,11 @@ All animation gifs are stored here: [C.A.R.L.E.S/gif](https://github.com/OriolMo
 > git clone https://github.com/OriolMoreno/C.A.R.L.E.S.git
 
 
-2. Install the required libraries. You can use environment.yml with conda command.
+2. Execute python script in each directory.
+  Yow will need to download the libraries requiered for each think if you don't have-it downloaded yet. All the pythonic libraris that we used are free.
 
-> conda env create -f environment.yml
+3. Add on or two stars to this repo if you like it :smiley:. 
 
-
-3. Execute python script in each directory.
-
-4. Add on or two stars to this repo if you like it :smiley:. 
 
 # Description
 C.A.R.L.E.S is a robot capable of playing 1vs1 (Human vs AI) games in the tipical spanish brisca game.
@@ -90,9 +88,9 @@ However, this part of the robot will not be able to be carried out for logical r
 
 ## Kinematics
 
-This is a 2D Gaussian grid mapping example.
+This is a animation example of the traslation simulation program that we made from zero.
 
-![2](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Mapping/gaussian_grid_map/animation.gif)
+![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/ik.gif)
 
 ## Ray casting grid map
 
