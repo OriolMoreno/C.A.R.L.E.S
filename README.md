@@ -12,6 +12,7 @@
       * [Extended Kalman Filter localization](#extended-kalman-filter-localization)
       * [Particle filter localization](#particle-filter-localization)
       * [Histogram filter localization](#histogram-filter-localization)
+   * [Description](#Description)
    * [MODULES](#modules)
       * [Kinematics](#kinematics)
       * [Ray casting grid map](#ray-casting-grid-map)
@@ -22,20 +23,12 @@
    * [Authors](#authors)
 
 # What is this?
+This is a robotic project made for the assignature of Robòtica, Llenguatge i Planificació. We made the software part deeply but we didn't get to the hardware due to Coronavirus. 
+The poroject is prepared if some of the readers like you want to continue with C.A.R.L.E.S. and make it to the hardware part too.
 
-This is a Python code collection of robotics algorithms, especially for autonomous navigation.
+Take a look at description part to know more about what C.A.R.L.E.S exactly is capable.
 
-Features:
 
-1. Easy to read for understanding each algorithm's basic idea.
-
-2. Widely used and practical algorithms are selected.
-
-3. Minimum dependency.
-
-See this paper for more details:
-
-- [\[1808\.10703\] PythonRobotics: a Python code collection of robotics algorithms](https://arxiv.org/abs/1808.10703) ([BibTeX](https://github.com/AtsushiSakai/PythonRoboticsPaper/blob/master/python_robotics.bib))
 
 
 # Requirements
@@ -48,25 +41,28 @@ See this paper for more details:
 
 - matplotlib
 
-- pandas
+- maths
 
-- [cvxpy](https://www.cvxpy.org/index.html) 
+- unity
+
+
 
 # Documentation
 
-This README only shows some examples of this project. 
+This README only shows some part of this project. 
 
-If you are interested in other examples or mathematical backgrounds of each algorithm, 
+If you are interested on more information you can see the last report that we made for our assignature
 
-You can check the full documentation online: [https://pythonrobotics.readthedocs.io/](https://pythonrobotics.readthedocs.io/)
+You can also download the programs and some of them are made for people that dosen't have the knowledge of what this programs do or how. The program asks the client for some inputs to show the client some funcionalitis soo it will be easy for enyone, or that's whast we expect.
 
-All animation gifs are stored here: [AtsushiSakai/PythonRoboticsGifs: Animation gifs of PythonRobotics](https://github.com/AtsushiSakai/PythonRoboticsGifs)
+All animation gifs are stored here: [C.A.R.L.E.S/gif](https://github.com/OriolMoreno/C.A.R.L.E.S/tree/master/gif)
+
 
 # How to use
 
 1. Clone this repo.
 
-> git clone https://github.com/AtsushiSakai/PythonRobotics.git
+> git clone https://github.com/OriolMoreno/C.A.R.L.E.S.git
 
 
 2. Install the required libraries. You can use environment.yml with conda command.
@@ -76,54 +72,19 @@ All animation gifs are stored here: [AtsushiSakai/PythonRoboticsGifs: Animation 
 
 3. Execute python script in each directory.
 
-4. Add star to this repo if you like it :smiley:. 
+4. Add on or two stars to this repo if you like it :smiley:. 
 
-# Localization
-
-## Extended Kalman Filter localization
-
-<img src="https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Localization/extended_kalman_filter/animation.gif" width="640" alt="EKF pic">
-
-Documentation: [Notebook](https://github.com/AtsushiSakai/PythonRobotics/blob/master/Localization/extended_kalman_filter/extended_kalman_filter_localization.ipynb)
-
-## Particle filter localization
-
-![2](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Localization/particle_filter/animation.gif)
-
-This is a sensor fusion localization with Particle Filter(PF).
-
-The blue line is true trajectory, the black line is dead reckoning trajectory,
-
-and the red line is estimated trajectory with PF.
-
-It is assumed that the robot can measure a distance from landmarks (RFID).
-
-This measurements are used for PF localization.
-
-Ref:
-
-- [PROBABILISTIC ROBOTICS](http://www.probabilistic-robotics.org/)
+# Description
+C.A.R.L.E.S is a robot capable of playing 1vs1 (Human vs AI) games in the tipical spanish brisca game.
+The main mechanism consists of a 3-axis anthropomorphic arm, which allows movement in a circular area on a board. At the end of the last shaft is a manipulator formed by a suction cup, which is controlled by a pneumatic mechanism with a servomotor and a syringe. The board adapts to the course of the arm, while maintaining as much as possible the typical layout of the brisca game. The robot's hand is on its right and elevated so that it can have a camera inside the box that holds them and thus be able to perform a card recognition by computer vision. Each player's cards, trump card and deck are in the center of the board. There is also a structure to have elevated a second camera that controls the playing area. Finally, to the left of the arm is a mechanism that allows the robot to spin a card.
+However, this part of the robot will not be able to be carried out for logical reasons in a pandemic situation. Then the project focuses on developing exclusively the robot software and being able to polish each module as a group and as a whole. In C.A.R.L.E.S it is able to:
+- Recognize cards with the vision module (number and stick).
+- Play a brisket game with an AI algorithm that will try to beat the opponent.
+- Control the actions to be performed (start and end game, steal a card, know that it is the turn of the shift, etc.) by means of voice commands that the human will use during execution.
+- Calculate the angles of rotation of the arm motors in order to move the manipulator (including the one that controls the pressure of the suction cup) from one point to another, according to the movements that should be made in case of its physical creation. .
+- Unification of all the skills amended in a single workflow, which should be what the physical robot had.
 
 
-## Histogram filter localization
-
-![3](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Localization/histogram_filter/animation.gif)
-
-This is a 2D localization example with Histogram filter.
-
-The red cross is true position, black points are RFID positions.
-
-The blue grid shows a position probability of histogram filter.  
-
-In this simulation, x,y are unknown, yaw is known.
-
-The filter integrates speed input and range observations from RFID for localization.
-
-Initial position is not needed.
-
-Ref:
-
-- [PROBABILISTIC ROBOTICS](http://www.probabilistic-robotics.org/)
 
 # Modules
 
