@@ -1,11 +1,12 @@
 # C.A.R.L.E.S. Robotics Project
  Card-playing Algorithmic Robot for Leisure and Elder Socializing (C.A.R.L.E.S.)
- 
-<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/FotoPortadaC.A.R.L.E.S.png" align="right" width="300" alt="header pic"/>
+ <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/UAB.png" align="center" width="300" alt="header pic"/>
+
 
 # Table of Contents
    * [What is this?](#what-is-this)
-   * [Requirements](#requirements)
+   * [Requirements]
+   (#requirements)<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/FotoPortadaC.A.R.L.E.S.png" align="right" width="300" alt="header pic"/>
    * [Documentation](#documentation)
    * [How to use](#how-to-use)
    * [Localization](#localization)
@@ -22,14 +23,20 @@
    * [Support](#support)
    * [Authors](#authors)
 
+
+
 # What is this?
-This is a robotic project made for the assignature of Robòtica, Llenguatge i Planificació. We made the software part deeply but we didn't get to the hardware due to Coronavirus. 
+This is a robotic project made for the assignature of Robòtica, Llenguatge i Planificació. 
+
+
+
+We made the software part deeply but we didn't get to the hardware due to Coronavirus. 
 The poroject is prepared if some of the readers like you want to continue with C.A.R.L.E.S. and make it to the hardware part too.
 
 Take a look at description part to know more about what C.A.R.L.E.S exactly is capable.
 
 To take the first contact download this exe to see a soo realistic simulation of C.A.R.L.E.S:
-https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/simulation.exe
+"https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/simulation.exe" 
 
 
 # Requirements
@@ -74,8 +81,7 @@ All animation gifs are stored here: [C.A.R.L.E.S/gif](https://github.com/OriolMo
 
 # Description
 C.A.R.L.E.S is a robot capable of playing 1vs1 (Human vs AI) games in the tipical spanish brisca game.
-The main mechanism consists of a 3-axis anthropomorphic arm, which allows movement in a circular area on a board. At the end of the last shaft is a manipulator formed by a suction cup, which is controlled by a pneumatic mechanism with a servomotor and a syringe. The board adapts to the course of the arm, while maintaining as much as possible the typical layout of the brisca game. The robot's hand is on its right and elevated so that it can have a camera inside the box that holds them and thus be able to perform a card recognition by computer vision. Each player's cards, trump card and deck are in the center of the board. There is also a structure to have elevated a second camera that controls the playing area. Finally, to the left of the arm is a mechanism that allows the robot to spin a card.
-However, this part of the robot will not be able to be carried out for logical reasons in a pandemic situation. Then the project focuses on developing exclusively the robot software and being able to polish each module as a group and as a whole. In C.A.R.L.E.S it is able to:
+The main mechanism consists of a 3-axis anthropomorphic arm, which allows movement in a circular area on a board. At the end of the last shaft is a manipulator formed by a suction cup, which is controlled by a pneumatic mechanism with a servomotor and a syringe. The board adapts to the course of the arm, while maintaining as much as possible the typical layout of the brisca game. The robot's hand is on its right and elevated so that it can have a camera inside the box that holds them and thus be able to perform a card recognition by computer vision. Each player's cards, trump card and deck are in the center of the board. There is also a structure to have elevated a second camera that controls the playing area. Finally, to the left of the arm is a mechanism that allows the robot to spin a card. However, this part of the robot will not be able to be carried out for logical reasons in a pandemic situation. Then the project focuses on developing exclusively the robot software and being able to polish each module as a group and as a whole. In C.A.R.L.E.S it is able to:<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/cartas.png" align="right" width="300" alt="header pic"/>
 - Recognize cards with the vision module (number and stick).
 - Play a brisket game with an AI algorithm that will try to beat the opponent.
 - Control the actions to be performed (start and end game, steal a card, know that it is the turn of the shift, etc.) by means of voice commands that the human will use during execution.
