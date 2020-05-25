@@ -1,4 +1,5 @@
-# C.A.R.L.E.S Robotics Project
+# C.A.R.L.E.S. Robotics Project
+ Card-playing Algorithmic Robot for Leisure and Elder Socializing (C.A.R.L.E.S.)
  
 <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/FotoPortadaC.A.R.L.E.S.png" align="right" width="300" alt="header pic"/>
 
@@ -11,53 +12,12 @@
       * [Extended Kalman Filter localization](#extended-kalman-filter-localization)
       * [Particle filter localization](#particle-filter-localization)
       * [Histogram filter localization](#histogram-filter-localization)
-   * [Mapping](#mapping)
-      * [Gaussian grid map](#gaussian-grid-map)
+   * [MODULES](#modules)
+      * [Kinematics](#kinematics)
       * [Ray casting grid map](#ray-casting-grid-map)
       * [Lidar to grid map](#lidar-to-grid-map)
       * [k-means object clustering](#k-means-object-clustering)
-      * [Rectangle fitting](#rectangle-fitting)
-   * [SLAM](#slam)
-      * [Iterative Closest Point (ICP) Matching](#iterative-closest-point-icp-matching)
-      * [FastSLAM 1.0](#fastslam-10)
-   * [Path Planning](#path-planning)
-      * [Dynamic Window Approach](#dynamic-window-approach)
-      * [Grid based search](#grid-based-search)
-         * [Dijkstra algorithm](#dijkstra-algorithm)
-         * [A* algorithm](#a-algorithm)
-         * [Potential Field algorithm](#potential-field-algorithm)
-         * [Grid based coverage path planning](#grid-based-coverage-path-planning)
-      * [State Lattice Planning](#state-lattice-planning)
-         * [Biased polar sampling](#biased-polar-sampling)
-         * [Lane sampling](#lane-sampling)
-      * [Probabilistic Road-Map (PRM) planning](#probabilistic-road-map-prm-planning)
-      * [Rapidly-Exploring Random Trees (RRT)](#rapidly-exploring-random-trees-rrt)
-         * [RRT*](#rrt)
-         * [RRT* with reeds-shepp path](#rrt-with-reeds-shepp-path)
-         * [LQR-RRT*](#lqr-rrt)
-      * [Quintic polynomials planning](#quintic-polynomials-planning)
-      * [Reeds Shepp planning](#reeds-shepp-planning)
-      * [LQR based path planning](#lqr-based-path-planning)
-      * [Optimal Trajectory in a Frenet Frame](#optimal-trajectory-in-a-frenet-frame)
-   * [Path Tracking](#path-tracking)
-      * [move to a pose control](#move-to-a-pose-control)
-      * [Stanley control](#stanley-control)
-      * [Rear wheel feedback control](#rear-wheel-feedback-control)
-      * [Linear–quadratic regulator (LQR) speed and steering control](#linearquadratic-regulator-lqr-speed-and-steering-control)
-      * [Model predictive speed and steering control](#model-predictive-speed-and-steering-control)
-      * [Nonlinear Model predictive control with C-GMRES](#nonlinear-model-predictive-control-with-c-gmres)
-   * [Arm Navigation](#arm-navigation)
-      * [N joint arm to point control](#n-joint-arm-to-point-control)
-      * [Arm navigation with obstacle avoidance](#arm-navigation-with-obstacle-avoidance)
-   * [Aerial Navigation](#aerial-navigation)
-      * [drone 3d trajectory following](#drone-3d-trajectory-following)
-      * [rocket powered landing](#rocket-powered-landing)
-   * [Bipedal](#bipedal)
-      * [bipedal planner with inverted pendulum](#bipedal-planner-with-inverted-pendulum)
-   * [License](#license)
-   * [Use-case](#use-case)
-   * [Contribution](#contribution)
-   * [Citing](#citing)
+
    * [Support](#support)
    * [Authors](#authors)
 
@@ -165,9 +125,9 @@ Ref:
 
 - [PROBABILISTIC ROBOTICS](http://www.probabilistic-robotics.org/)
 
-# Mapping
+# Modules
 
-## Gaussian grid map
+## Kinematics
 
 This is a 2D Gaussian grid mapping example.
 
