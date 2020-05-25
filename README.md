@@ -5,11 +5,11 @@
  
 
 
-# Table of Contents
+# Table of Contents 
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/FotoPortadaC.A.R.L.E.S.png" align="right" width="300" alt="header pic"/>
+
    * [What is this?](#what-is-this)
    * [Requirements](#requirements)
-   <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/FotoPortadaC.A.R.L.E.S.png" align="right" width="300" alt="header pic"/>
-   
    * [Documentation](#documentation)
    * [How to use](#how-to-use)
    * [Localization](#localization)
