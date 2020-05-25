@@ -128,13 +128,13 @@ If you or your company would like to support this project, please consider writi
 
 # Authors
 
-- [ADRIÀ CARRASQUILLA](1492104)
+- [ADRIÀ CARRASQUILLA] - 1492104
 
-- [ORIOL MORENO](1496663)
+- [ORIOL MORENO] - 1496663
 
-- [JAN MOROS](1492333)
+- [JAN MOROS] - 1492333
 
-- [VÍCTOR SUÁREZ ](1493402)
+- [VÍCTOR SUÁREZ ] - 1493402
 
-- [Miquel Tena](1491232)
+- [Miquel Tena] - 1491232
 
