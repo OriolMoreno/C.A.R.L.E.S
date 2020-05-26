@@ -136,12 +136,15 @@ We finally separate from the project a few parts and we have made them a part. T
 # Modules
 
 ## Brisca AI
-We made an algorithm to play the brisca game and to have the capacity to be a good rival; we made a 3D simulation to show it:
+We made an algorithm to play the brisca game and to have the capacity to be a good rival; we made a 3D simulation to show this capacities with a game:
+
+You will easily win C.A.R.L.E.S?
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/simulació%20brisca.gif)
 
 
 ## Card Detection with computer vision
+We made a program with basic computer vision that detects the number of a card with any rotation and different backgrounds and illuminations. Here we show a part of the process: 
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/modulVisio.gif)
     
