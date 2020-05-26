@@ -122,7 +122,7 @@ Requirements for the algorithm: Python 3 and the numpy and maths libraries. For 
 
 ### Voice recognition
 
-This module is based on google's speech recognition API, and it's used to analize human opponent's orders, and guess which of the possible actions they are ordering. This it outuputs to the main controller, which will send the information to the AI module if necessary.
+This module is based on google's speech recognition API, and it's used to analize the human opponent's orders, and guess which of the possible actions the user is requesting. This is sent to the main controller, which will send the information to the AI module if necessary.
 
 Requirements: Python 3 and its libraries google-cloud-speech, google-auth-oauthlib, sounddevice and soundfile.
 
