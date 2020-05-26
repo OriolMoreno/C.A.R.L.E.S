@@ -21,7 +21,7 @@
       * [Brisca AI](#Brisca-AI)
       * [Card Detection with computer vision](#Card-Detection-with-computer-vision)
       * [Inverse kinematics algorithm visualizer](#kinematics)
-      * [Big simulation](#Big simulation)
+      * [Big Simulation](#Big-Simulation)
 
    * [Support](#support)
    * [Authors](#authors)
@@ -153,8 +153,9 @@ This is a animation example of the translation simulation program that we made f
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/ik.gif)
 
 
-## Big simulation
+## Big Simulation
 If you want to see a video of 1 minute of all functionalities take a look at this video:
+
 https://www.youtube.com/watch?v=kZnISXRfvJQ&feature=youtu.be
 
 
