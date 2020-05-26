@@ -29,16 +29,16 @@
 
 
 # What is this?
-This is a robotic project made for the assignature of Robòtica, Llenguatge i Planificació. 
+This is a robotic project made for the subject of Robòtica, Llenguatge i Planificació. 
 
 
 
 We made the software part deeply but we didn't get to the hardware due to Coronavirus. 
-The poroject is prepared if some of the readers like you want to continue with C.A.R.L.E.S. and make it to the hardware part too.
+The project is prepared if some of the readers like you want to continue with C.A.R.L.E.S. and make it to the hardware part too.
 
 Take a look at description part to know more about what C.A.R.L.E.S exactly is capable.
 
-To take the first contact download this exe to see a soo realistic simulation of C.A.R.L.E.S:
+To take the first contact, download this exe to see a so realistic simulation of C.A.R.L.E.S:
 "https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/simulation.exe" 
 
 
@@ -62,9 +62,10 @@ To take the first contact download this exe to see a soo realistic simulation of
 
 This README only shows some part of this project. 
 
-If you are interested on more information you can see the last report that we made for our assignature
+If you are interested on more information you can see the last report that we made for our subject
 
-You can also download the programs and some of them are made for people that dosen't have the knowledge of what this programs do or how. The program asks the client for some inputs to show the client some funcionalitis soo it will be easy for enyone, or that's whast we expect.
+You can also download the programs and some of them are made for people that don’t have the knowledge of what this programs do or how. The program asks the client for some inputs to show the client some functionality. So it will be easy for anyone to execute our codes, or that's what we expect.
+
 
 All animation gifs are stored here: [C.A.R.L.E.S/gif](https://github.com/OriolMoreno/C.A.R.L.E.S/tree/master/gif)
 
@@ -140,7 +141,7 @@ We finally separte from the prject a few parts and we have maded them a partt. T
 
 ## Card Detection with computer vision
 
-
+![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/modulVisio.gif)
     
      
       
@@ -153,7 +154,8 @@ This is a animation example of the traslation simulation program that we made fr
 
 
 ## Big simulation
-
+If you want to see a video of 1 minut of all funcionalitis take a look at this video:
+https://www.youtube.com/watch?v=kZnISXRfvJQ&feature=youtu.be
 
 
 # Support
