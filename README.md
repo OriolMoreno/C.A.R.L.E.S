@@ -13,15 +13,17 @@
    * [Documentation](#documentation)
    * [How to use](#how-to-use) 
    * [Description](#Description)
-   * [Hardware Scheme](#Hardware-Scheme)
+   * [Amazing contributions](#Amazing-contributions)
+   * [Hardware Scheme](#Hardware-Scheme)   
+   * [3D pieces](#3D-pieces)
    * [Software Architecture](#Software-Architecture)
    * [MODULES](#modules)
-      * [Kinematics](#kinematics)
-      * [Ray casting grid map](#ray-casting-grid-map)
-      * [Lidar to grid map](#lidar-to-grid-map)
-      * [k-means object clustering](#k-means-object-clustering)
-      
-   * [Amazing contributions](#Amazing-contributions)
+      * [Brisca AI](#Brisca-AI)
+      * [Card Detection with computer vision](#Card-Detection-with-computer-vision)
+      * [Inverse kinematics algorithm visualizer](#kinematics)
+      * [Human Interaction](#Human-Interaction)
+      * [Simulation](#Simulation)
+
    * [Support](#support)
    * [Authors](#authors)
 
@@ -92,11 +94,31 @@ The main mechanism consists of a 3-axis anthropomorphic arm, which allows moveme
 
 
 
+# Amazing contributions
+the three most important contributions that brings this robot are:
+ * Entertainment for seniors:   it is designed to entertain the elderly, for whom robots are a whole new thing
+ * Classic Game Automation, the brisca: we give life to a classic and mythical game like the brisca combining it with technology and having it be even more enjoyable
+ * Voice recognition with human interaction: Designed to bring the user closer to the robot and allows it to communicate with it to a certain extent
+
 # Hardware Scheme
 This is the exactly Hardware Shceme that we didn't make due to coronavirus but we expect its wright.
-![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/carles_sketch_bb.png)
+
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/carles_sketch_bb.png" align="center" width="600" alt="header pic"/>
+
+# 3D pieces
 
 
+
+* [Software Architecture](#Software-Architecture)
+   * [MODULES](#modules)
+      * [Brisca AI](#Brisca-AI)
+      * [Card Detection with computer vision](#Card-Detection-with-computer-vision)
+      * [Inverse kinematics algorithm visualizer](#kinematics)
+      * [Human Interaction](#Human-Interaction)
+      * [Simulation](#Simulation)
+      
+      
+      
 # Software Architecture
 this is the software architecture of the project with the hardware components to, is not the ones we have finally done cause the changes of the evaluation method made us change a few thinks.
 We finally separte from the prject a few parts and we have maded them a partt. Thes are the parts we separate:
@@ -112,7 +134,7 @@ We finally separte from the prject a few parts and we have maded them a partt. T
 
 # Modules
 
-## Kinematics
+## Inverse kinematics algorithm visualizer
 
 This is a animation example of the traslation simulation program that we made from zero.
 
@@ -128,11 +150,10 @@ If you or your company would like to support this project, please consider writi
 
 # Authors
 
-- [ADRIÀ CARRASQUILLA - 1492104](https://psicologiaymente.com/drogas/popper) 
+- ADRIÀ CARRASQUILLA - 1492104
 
-- [ORIOL MORENO - 1496663](https://www.youtube.com/watch?v=heWcOs8iO4k)
+- ORIOL MORENO - 1496663
 
-- [JAN MOROS - 1492333](https://www.google.com/search?client=opera&q=porno&sourceid=opera&ie=UTF-8&oe=UTF-8)
+- JAN MOROS - 1492333
 
-- [VÍCTOR SUÁREZ - 1493402](https://www.elespanol.com/ciencia/investigacion/20171117/262724314_0.html) 
-
+- VÍCTOR SUÁREZ - 1493402
