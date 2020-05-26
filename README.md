@@ -92,7 +92,7 @@ We finally separate from the project a few parts and we have made them a part. T
 ### Brisca AI
 Requirements for the algorithm: python 3
 
-The first module is the AI that drives the game flow, it's the one who decides which card to choose from those on C.A.R.L.E.S.' hand, based on what a human player could see, and more. It is explained in more detail in the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/SPRINT%20%233%20Software%20Prototype%20v1.0.zip)), both it's python version for the actual raspberry pi-driven robot and the rework we made for the Unity videogame.
+The first module is the AI that drives the game flow, it's the one who decides which card to choose from those on C.A.R.L.E.S.' hand, based on what a human player could see, and more. It is explained in more detail in the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/RLP_SPRINT_5%20-%20Final%20Report.pdf)), both it's python version for the actual raspberry pi-driven robot and the rework we made for the Unity videogame.
 
 ### Card Detection with computer vision
 We made a program based on computer vision able to detect the number and suit of a card with any rotation and different backgrounds and illuminations. Here we show a part of the process: 
@@ -119,8 +119,8 @@ This module is based on google's speech recognition API, and it's used to analiz
 
 Requirements: Python 3 and its libraries google-cloud-speech, google-auth-oauthlib, sounddevice and soundfile.
 
-### Videogame Simulation !!!!!!! CANVIAR LINK
-Finally, to show how it would have been had we been able to implement on harware, we've build a simulation videogame, in which you can play full Brisca matches against C.A.R.L.E.S.! In it, there's the brisca player algorithm adapted for the simulation (further detail on the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/SPRINT%20%233%20Software%20Prototype%20v1.0.zip)), and we've also added some of the Human Interaction part of the project, as C.A.R.L.E.S. speaks and grunts during the match.
+### Videogame Simulation
+Finally, to show how it would have been had we been able to implement on harware, we've build a simulation videogame, in which you can play full Brisca matches against C.A.R.L.E.S.! In it, there's the brisca player algorithm adapted for the simulation (further detail on the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/RLP_SPRINT_5%20-%20Final%20Report.pdf)), and we've also added some of the Human Interaction part of the project, as C.A.R.L.E.S. speaks and grunts during the match.
 
 Here's a little demo of the game, but you can download it yourself! See the [Downloads section](#Downloads).
 
