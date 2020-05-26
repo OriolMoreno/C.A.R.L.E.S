@@ -105,8 +105,11 @@ This is the exactly Hardware Shceme that we didn't make due to coronavirus but w
 
 <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/carles_sketch_bb.png" align="center" width="600" alt="header pic"/>
 
-# 3D pieces
 
+# 3D pieces
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/braç.png" align="right" width="400" alt="header pic"/>
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/girador.png" align="center" width="400" alt="header pic"/>
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/xeringa.png" align="left" width="400" alt="header pic"/>
 
 
 * [Software Architecture](#Software-Architecture)
