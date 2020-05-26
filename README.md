@@ -20,7 +20,7 @@
    * [MODULES](#modules)
       * [Brisca AI](#Brisca-AI)
       * [Card Detection with computer vision](#Card-Detection-with-computer-vision)
-      * [Inverse kinematics algorithm visualizer](#kinematics)
+      * [Inverse kinematics algorithm visualizer](#Inverse-kinematics-algorithm-visualizer)
       * [Big Simulation](#Big-Simulation)
 
    * [Support](#support)
@@ -153,7 +153,7 @@ We made a program with basic computer vision that detects the number of a card w
 
 ## Inverse kinematics algorithm visualizer
 
-This is a animation example of the translation simulation program that we made from zero.
+This is an animation example of the translation simulation program that we made from zero. This program shows the translation that C.A.R.L.E.S do when he wants to move to a x,y,z position of the workspace. It’s made with geometric inverse kinematics method and the translation is made as a continuous rectilinear trajectory.
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/ik.gif)
 
