@@ -21,9 +21,11 @@
       * [Brisca AI](#Brisca-AI)
       * [Card Detection with computer vision](#Card-Detection-with-computer-vision)
       * [Inverse kinematics algorithm visualizer](#Inverse-kinematics-algorithm-visualizer)
-      * [Big Simulation](#Big-Simulation)
+      * [Voice Recognition](#voice-recognition)
+      * [Videogame Simulation](#videogame-simulation)
 
-   * [Support](#support)
+   * [Video](#video)
+   * [Downloads](#downloads)
    * [Authors](#authors)
 
 
@@ -67,30 +69,33 @@ This is the Hardware Scheme we planned for this project, within the 100€ budge
 
 
 # 3D pieces
-Edited and personalized pieces for _C.A.R.L.E.S._ with name annotation.
+In order to recreate the physical model of the robot, we had to design some of its parts as models to print with a 3D printer the university gave us access to. This are the models needed.  
 
-![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/girador.png)
-![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/xeringa.png)
-![](imgs/girador.png)
-![](imgs/deck.png)
-![](imgs/pila.png)
+![2](imgs/cam.png =100x)
+![2](imgs/xeringa.png =250x)
+![](imgs/girador.png =200x)
+![](imgs/deck.png =250x)
+![](imgs/pila.png =200x)
 
-
-
-
-
+Files are avaliable under [stl](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/stl/). Of course they could be replaced by any other model or created with other methods rather than 3D printing.
 
 
 
 # Software Architecture
-this is the software architecture of the project with the hardware components to, is not the ones we have finally done cause the changes of the evaluation method made us change a few thinks.
-We finally separate from the project a few parts and we have made them a part. These are the parts we separate:
-* The module of Computer Vision
-* The human interaction
-* The realistic cinematic.
+
+In order to develop the idea we had, we must divide the software architecture in different modules. First to make them work separately and then be able to put them all together as one whole project. The modules are:
+* Computer Vision module: card recognition
+* Brisca AI 1vs1
+* Inverse Kinematics
+* Voice Recognition
+* Controller: communication of all the above modules.
+
+Initially all of them must had to work together, but after the project's objectives changed we decided to do different simulations in order to reproduce the functionality we were aiming. These are:
+* Computer Vision module: card recognition (as an independent simulation)
+* Inverse Kinematics Simulation: not only doing the math but also visualizing it.
+* Fully functional 3D game: This simulation involves 3D models, animation and game development to have a fully inmersive experience and getting the closest image to what the project was going to look like.
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/DiagramaModuls.png)
-
 
 
 
@@ -129,7 +134,7 @@ Requirements: Python 3 and its libraries google-cloud-speech, google-auth-oauthl
 ### Videogame Simulation
 Finally, to show how it would have been had we been able to implement on harware, we've build a simulation videogame, in which you can play full Brisca matches against _C.A.R.L.E.S._! In it, there's the brisca player algorithm adapted for the simulation (further detail on the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/RLP_SPRINT_5%20-%20Final%20Report.pdf)), and we've also added some of the Human Interaction part of the project, as _C.A.R.L.E.S._ speaks and grunts during the match.
 
-Here's a little demo of the game, but you can download it yourself! See the [Downloads section](#Downloads).
+Here's a little demo of the game, but you can download it and try uit by yourself! See the [Downloads section](#Downloads).
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/simulació%20brisca.gif)
 
