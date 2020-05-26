@@ -71,11 +71,17 @@ This is the Hardware Scheme we planned for this project, within the 100€ budge
 # 3D pieces
 In order to recreate the physical model of the robot, we had to design some of its parts as models to print with a 3D printer the university gave us access to. This are the models needed.  
 
-![2](imgs/cam.png =100x)
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/cam.png" width="100"/>
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/xeringa.png" width="250"/>
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/girador.png" width="200"/>
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/deck.png" width="250"/>
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/pila.png" width="200"/>
+
+<!--![2](imgs/cam.png =100x)
 ![2](imgs/xeringa.png =250x)
 ![](imgs/girador.png =200x)
 ![](imgs/deck.png =250x)
-![](imgs/pila.png =200x)
+![](imgs/pila.png =200x)-->
 
 Files are avaliable under [stl](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/stl/). Of course they could be replaced by any other model or created with other methods rather than 3D printing.
 
