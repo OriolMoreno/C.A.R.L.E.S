@@ -136,7 +136,7 @@ We finally separate from the project a few parts and we have made them a part. T
 # Modules
 
 ## Brisca AI
-![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/ik.gif)
+![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/simulació%20brisca.gif)
 
 
 ## Card Detection with computer vision
