@@ -136,6 +136,8 @@ We finally separate from the project a few parts and we have made them a part. T
 # Modules
 
 ## Brisca AI
+We made an algorithm to play the brisca game and to have the capacity to be a good rival; we made a 3D simulation to show it:
+
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/simulació%20brisca.gif)
 
 
@@ -156,15 +158,16 @@ This is a animation example of the translation simulation program that we made f
 
 ## Big Simulation
 This is a video we made of all big functionalities shown one by one: 
+
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/funcionalities.gif)
+
 If you want to see athe complet video of a few minutes of all functionalities, just take a look at it clicking the link:
+
 https://www.youtube.com/watch?v=alATNutyEoA&feature=youtu.be
 
 
 # Support
-
-If you or your company would like to support this project, please consider writing a message to us and we will attend the call:
-
+If you or your company would like to support this project, we had to say that we made this project without intention of getting any economic benefits with it, but business is business. Please consider writing a message to us and we will attend the call. 
 
 
 # Authors
