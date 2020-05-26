@@ -1,4 +1,4 @@
-<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/UAB.png" align="center" width="300" alt="header pic"/>
+<!-- <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/UAB.png" align="center" width="300" alt="header pic"/> -->
 
 # C.A.R.L.E.S. Robotics Project
  Card-playing Algorithmic Robot for Leisure and Elder Socializing (C.A.R.L.E.S.)
@@ -29,58 +29,13 @@
 
 
 # What is this?
-This is a robotic project made for the subject of Robòtica, Llenguatge i Planificació. 
+
+We are 3rd year Computer Science students and this is a robotics project for our subject on Robòtica, Llenguatge i Planificació - Robotics Language and Planning. 
 
 
+We have focused deeply on polishing the software part of the project, but due to the circumstances (this project was interrupted by the 2020 Coronavirus outbreak), we haven't been able to implement it on hardware. Instead, we have prepared a full-on videogame to act as a simulation for what this project can become. And it is prepared for anyone to take it and move our sofware modules to a phisical robot.
 
-We made the software part deeply but we didn't get to the hardware due to Coronavirus. 
-The project is prepared if some of the readers like you want to continue with C.A.R.L.E.S. and make it to the hardware part too.
-
-Take a look at description part to know more about what C.A.R.L.E.S exactly is capable.
-
-To take the first contact, download this exe to see a so realistic simulation of C.A.R.L.E.S:
-"https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/simulation.exe" 
-
-
-# Requirements
-Here are some of the libraries we use in this project, all of the open sources
-- Python 3.8.x
-
-- numpy
-
-- scipy
-
-- matplotlib
-
-- maths
-
-- unity
-
-
-
-# Documentation
-
-This README only shows some part of this project. 
-
-If you are interested on more information you can see the last report that we made for our subject
-
-You can also download the programs and some of them are made for people that don’t have the knowledge of what this programs do or how. The program asks the client for some inputs to show the client some functionality. So it will be easy for anyone to execute our codes, or that's what we expect.
-
-
-All animation gifs are stored here: [C.A.R.L.E.S/gif](https://github.com/OriolMoreno/C.A.R.L.E.S/tree/master/gif)
-
-
-# How to use
-
-1. Clone this repo.
-
-> git clone https://github.com/OriolMoreno/C.A.R.L.E.S.git
-
-
-2. Execute python script in each directory.
-  You will need to download the libraries required for each think if you don't have-it downloaded yet. All the pythonic libraries that we used are free.
-
-3. Add on or two stars to this repo if you like it :smiley:. 
+This is where you come in!
 
 
 # Description
@@ -96,13 +51,13 @@ The main mechanism consists of a 3-axis anthropomorphic arm, which allows moveme
 
 # Amazing contributions
 
-the three most important contributions that brings this robot are:<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/braç.png" align="right" width="150" alt="header pic"/>
+The three most important contributions in which our robot stands up are:<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/braç.png" align="right" width="150" alt="header pic"/>
 - Entertainment for seniors:  it is designed to entertain the elderly, for whom robots are a whole new thing.
 - Classic Game Automation, the brisca: we give life to a classic and mythical game like the brisca combining it with technology and having it be even more enjoyable.
-- Voice recognition with human interaction: Designed to bring the user closer to the robot and allows it to communicate with it to a certain extent.
+- Voice recognition with human interaction: Designed to bring the user closer to the robot and allows them to communicate with it.
 
 # Hardware Scheme
-This is the exactly Hardware Scheme that we didn't make due to coronavirus but we expect its wright.
+This is the Hardware Scheme we planned for this project, within the 100€ budget we had. It's free for anyone to use it but we'd heavily recommend, if they're going to invest in making this project, to put some better hardware on it.
 
 <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/carles_sketch_bb.png" align="center" width="600" alt="header pic"/>
 
@@ -132,53 +87,68 @@ We finally separate from the project a few parts and we have made them a part. T
 
 
 
+## Modules
 
-# Modules
+### Brisca AI
+Requirements for the algorithm: python 3
 
-## Brisca AI
-We made an algorithm to play the brisca game and to have the capacity to be a good rival; we made a 3D simulation to show this capacities with a game:
+The first module is the AI that drives the game flow, it's the one who decides which card to choose from those on C.A.R.L.E.S.' hand, based on what a human player could see, and more. It is explained in more detail in the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/SPRINT%20%233%20Software%20Prototype%20v1.0.zip)), both it's python version for the actual raspberry pi-driven robot and the rework we made for the Unity videogame.
 
-You will easily win C.A.R.L.E.S?
+### Card Detection with computer vision
+We made a program based on computer vision able to detect the number and suit of a card with any rotation and different backgrounds and illuminations. Here we show a part of the process: 
 
-![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/simulació%20brisca.gif)
-
-
-## Card Detection with computer vision
-We made a program with basic computer vision that detects the number of a card with any rotation and different backgrounds and illuminations. Here we show a part of the process: 
+Requirements: Python 3, and its libraries numpy, cv2, imutils, math and scipy.
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/modulVisio.gif)
     
-     
-      
 
-## Inverse kinematics algorithm visualizer
+### Inverse kinematics algorithm + visualizer
 
-This is an animation example of the translation simulation program that we made from zero. This program shows the translation that C.A.R.L.E.S do when he wants to move to a x,y,z position of the workspace. It’s made with geometric inverse kinematics method and the translation is made as a continuous rectilinear trajectory.
+This algorithm built from scratch is baes don the geometric inverse kinematics method for calculating arm degrees from coordinates, and the smooth movement between two points is calculated using a continuous rectiliniar trajectory.
+
+The visualizer takes an imput of an x,y,z position inside the workspace and shows an animation of C.A.R.L.E.S.' arm doing the designated trajectory. As an example, this is the animation it'd play as a celebration when winning the game:
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/ik.gif)
 
+Requirements for the algorithm: Python 3 and the numpy and maths libraries. For visualization, matplotlib and scipy are also needed.
 
 
-## Big Simulation
-This is a video we made of all big functionalities shown one by one: 
+### Voice recognition
 
-![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/funcionalities.gif)
+This module is based on google's speech recognition API, and it's used to analize human opponent's orders, and guess which of the possible actions they are ordering. This it outuputs to the main controller, which will send the information to the AI module if necessary.
 
-If you want to see athe complet video of a few minutes of all functionalities, just take a look at it clicking the link:
+Requirements: Python 3 and its libraries google-cloud-speech, google-auth-oauthlib, sounddevice and soundfile.
 
-https://www.youtube.com/watch?v=alATNutyEoA&feature=youtu.be
+### Videogame Simulation !!!!!!! CANVIAR LINK
+Finally, to show how it would have been had we been able to implement on harware, we've build a simulation videogame, in which you can play full Brisca matches against C.A.R.L.E.S.! In it, there's the brisca player algorithm adapted for the simulation (further detail on the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/SPRINT%20%233%20Software%20Prototype%20v1.0.zip)), and we've also added some of the Human Interaction part of the project, as C.A.R.L.E.S. speaks and grunts during the match.
+
+Here's a little demo of the game, but you can download it yourself! See the [Downloads section](#Downloads).
+
+![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/simulació%20brisca.gif)
+
+# Video
+[![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/funcionalities.gif)](https://www.youtube.com/watch?v=alATNutyEoA&feature=youtu.be)
+
+Click the animated gif for the full version!
 
 
-# Support
-If you or your company would like to support this project, we had to say that we made this project without intention of getting any economic benefits with it, but business is business. Please consider writing a message to us and we will attend the call. 
+
+
+
+# Downloads
+[Windows](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/simulation.exe) 
+
+[Android](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/carles.apk) 
+
+For MacOs you'll have to clone the repo and you'll find it under unity_simulation/BuildMacOs
 
 
 # Authors
 
-- ADRIÀ CARRASQUILLA - 1492104
+- [ADRIÀ CARRASQUILLA](https://github.com/adriacarrasquilla) - 1492104
 
-- ORIOL MORENO - 1496663
+- [ORIOL MORENO](https://github.com/OriolMoreno) - 1496663
 
-- JAN MOROS - 1492333
+- [JAN MOROS](https://github.com/janMoros) - 1492333
 
-- VÍCTOR SUÁREZ - 1493402
+- [VÍCTOR SUÁREZ](https://github.com/VictorSuarezVara) - 1493402
