@@ -153,10 +153,12 @@ This is a animation example of the translation simulation program that we made f
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/ik.gif)
 
 
-## Big Simulation
-If you want to see a video of 1 minute of all functionalities take a look at this video:
 
-https://www.youtube.com/watch?v=kZnISXRfvJQ&feature=youtu.be
+## Big Simulation
+This is a video we made of all big functionalities shown one by one: 
+![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/funcionalities.gif)
+If you want to see athe complet video of a few minutes of all functionalities, just take a look at it clicking the link:
+https://www.youtube.com/watch?v=alATNutyEoA&feature=youtu.be
 
 
 # Support
