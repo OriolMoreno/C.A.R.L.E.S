@@ -21,8 +21,7 @@
       * [Brisca AI](#Brisca-AI)
       * [Card Detection with computer vision](#Card-Detection-with-computer-vision)
       * [Inverse kinematics algorithm visualizer](#kinematics)
-      * [Human Interaction](#Human-Interaction)
-      * [Simulation](#Simulation)
+      * [Big simulation](#Big simulation)
 
    * [Support](#support)
    * [Authors](#authors)
@@ -97,9 +96,9 @@ The main mechanism consists of a 3-axis anthropomorphic arm, which allows moveme
 # Amazing contributions
 
 the three most important contributions that brings this robot are:<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/braç.png" align="right" width="150" alt="header pic"/>
-- Entertainment for seniors -->  it is designed to entertain the elderly, for whom robots are a whole new thing.
-- Classic Game Automation, the brisca --> we give life to a classic and mythical game like the brisca combining it with technology and having it be even more enjoyable.
-- Voice recognition with human interaction --> Designed to bring the user closer to the robot and allows it to communicate with it to a certain extent.
+- Entertainment for seniors:  it is designed to entertain the elderly, for whom robots are a whole new thing.
+- Classic Game Automation, the brisca: we give life to a classic and mythical game like the brisca combining it with technology and having it be even more enjoyable.
+- Voice recognition with human interaction: Designed to bring the user closer to the robot and allows it to communicate with it to a certain extent.
 
 # Hardware Scheme
 This is the exactly Hardware Shceme that we didn't make due to coronavirus but we expect its wright.
@@ -115,13 +114,8 @@ Edited and personalitzed pices for C.A.R.L.E.S with name anotation.
 
 
 
-* [Software Architecture](#Software-Architecture)
-   * [MODULES](#modules)
-      * [Brisca AI](#Brisca-AI)
-      * [Card Detection with computer vision](#Card-Detection-with-computer-vision)
-      * [Inverse kinematics algorithm visualizer](#kinematics)
-      * [Human Interaction](#Human-Interaction)
-      * [Simulation](#Simulation)
+
+  
       
       
       
@@ -140,11 +134,25 @@ We finally separte from the prject a few parts and we have maded them a partt. T
 
 # Modules
 
+## Brisca AI
+![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/ik.gif)
+
+
+## Card Detection with computer vision
+
+
+    
+     
+      
+
 ## Inverse kinematics algorithm visualizer
 
 This is a animation example of the traslation simulation program that we made from zero.
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/ik.gif)
+
+
+## Big simulation
 
 
 
