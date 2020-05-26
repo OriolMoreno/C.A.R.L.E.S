@@ -111,7 +111,7 @@ Requirements: Python 3, and its libraries numpy, cv2, imutils, math and scipy.
 
 ### Inverse kinematics algorithm + visualizer
 
-This algorithm built from scratch is baes don the geometric inverse kinematics method for calculating arm degrees from coordinates, and the smooth movement between two points is calculated using a continuous rectiliniar trajectory.
+This algorithm built from scratch is based on the geometric inverse kinematics method for calculating arm degrees from coordinates, and the smooth movement between two points is calculated using a continuous rectiliniar trajectory.
 
 The visualizer takes an imput of an x,y,z position inside the workspace and shows an animation of _C.A.R.L.E.S._' arm doing the designated trajectory. As an example, this is the animation it'd play as a celebration when winning the game:
 
