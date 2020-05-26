@@ -127,6 +127,8 @@ Here's a little demo of the game, but you can download it yourself! See the [Dow
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/simulació%20brisca.gif)
 
 # Video
+Short video showing all the functionalities of the project.
+
 [![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/funcionalities.gif)](https://www.youtube.com/watch?v=alATNutyEoA&feature=youtu.be)
 
 Click the animated gif for the full version!
