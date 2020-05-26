@@ -1,7 +1,7 @@
 <!-- <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/UAB.png" align="center" width="300" alt="header pic"/> -->
 
 # C.A.R.L.E.S. Robotics Project
- Card-playing Algorithmic Robot for Leisure and Elder Socializing (C.A.R.L.E.S.)
+ Card-playing Algorithmic Robot for Leisure and Elder Socializing (_C.A.R.L.E.S._)
 
 
 
@@ -39,12 +39,12 @@ This is where you come in!
 
 
 # Description
-C.A.R.L.E.S is a robot capable of playing 1vs1 (Human vs AI)  the typical Spanish game of brisca.
+_C.A.R.L.E.S_ is a robot capable of playing 1vs1 (Human vs AI)  the typical Spanish game of brisca.
 The main mechanism consists of a 3-axis anthropomorphic arm, which allows movement in a circular area on the board. At the end of the last shaft there is a manipulator formed by a suction cup, which is controlled by a pneumatic mechanism with a servomotor and a syringe. This mechanism allows the robot to pick up and move cards. The board adapts to the course of the arm, while maintaining as much as possible the typical layout of the brisca game. The robot's hand is on its right and elevated so it is possible to fit a camera inside the box that holds them and thus be able to perform card recognition by computer vision. This way the robot is aware of his cards values. Each player's cards, trump card and deck are in the center of the board. There is also second camera lifted from the table that controls the playing area. This way it is also aware of the cards played. Finally, to the left of the arm there is a mechanism that allows the robot to spin a card.
 
 However, the hardware planification we just described was not possible to perform due to education context in COVID-19 pandemic. We had to change the main focus to pure software development and the polishing of each module itself and as a whole.
 
-C.A.R.L.E.S is able to:<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/cartas.png" align="right" width="300" alt="header pic"/>
+_C.A.R.L.E.S_ is able to:<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/cartas.png" align="right" width="300" alt="header pic"/>
 - Recognize cards with the computer vision module (number and stick of the card).
 - Play a brisca game with an AI algorithm that will do its best to outsmart the opponent.
 - Control the actions to be performed (start and end game, steal a card, know that it is the turn of the shift, etc.) by voice commands that the human will say during the game.
@@ -67,10 +67,13 @@ This is the Hardware Scheme we planned for this project, within the 100€ budge
 
 
 # 3D pieces
-Edited and personalized pieces for C.A.R.L.E.S with name annotation.
+Edited and personalized pieces for _C.A.R.L.E.S._ with name annotation.
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/girador.png)
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/xeringa.png)
+![](imgs/girador.png)
+![](imgs/deck.png)
+![](imgs/pila.png)
 
 
 
@@ -96,7 +99,7 @@ We finally separate from the project a few parts and we have made them a part. T
 ### Brisca AI
 Requirements for the algorithm: python 3
 
-The first module is the AI that drives the game flow, it's the one who decides which card to choose from those on C.A.R.L.E.S.' hand, based on what a human player could see, and more. It is explained in more detail in the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/RLP_SPRINT_5%20-%20Final%20Report.pdf)), both it's python version for the actual raspberry pi-driven robot and the rework we made for the Unity videogame.
+The first module is the AI that drives the game flow, it's the one who decides which card to choose from those on _C.A.R.L.E.S._' hand, based on what a human player could see, and more. It is explained in more detail in the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/RLP_SPRINT_5%20-%20Final%20Report.pdf)), both it's python version for the actual raspberry pi-driven robot and the rework we made for the Unity videogame.
 
 ### Card Detection with computer vision
 We made a program based on computer vision able to detect the number and suit of a card with any rotation and different backgrounds and illuminations. Here we show a part of the process: 
@@ -110,7 +113,7 @@ Requirements: Python 3, and its libraries numpy, cv2, imutils, math and scipy.
 
 This algorithm built from scratch is baes don the geometric inverse kinematics method for calculating arm degrees from coordinates, and the smooth movement between two points is calculated using a continuous rectiliniar trajectory.
 
-The visualizer takes an imput of an x,y,z position inside the workspace and shows an animation of C.A.R.L.E.S.' arm doing the designated trajectory. As an example, this is the animation it'd play as a celebration when winning the game:
+The visualizer takes an imput of an x,y,z position inside the workspace and shows an animation of _C.A.R.L.E.S._' arm doing the designated trajectory. As an example, this is the animation it'd play as a celebration when winning the game:
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/ik.gif)
 
@@ -124,7 +127,7 @@ This module is based on google's speech recognition API, and it's used to analiz
 Requirements: Python 3 and its libraries google-cloud-speech, google-auth-oauthlib, sounddevice and soundfile.
 
 ### Videogame Simulation
-Finally, to show how it would have been had we been able to implement on harware, we've build a simulation videogame, in which you can play full Brisca matches against C.A.R.L.E.S.! In it, there's the brisca player algorithm adapted for the simulation (further detail on the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/RLP_SPRINT_5%20-%20Final%20Report.pdf)), and we've also added some of the Human Interaction part of the project, as C.A.R.L.E.S. speaks and grunts during the match.
+Finally, to show how it would have been had we been able to implement on harware, we've build a simulation videogame, in which you can play full Brisca matches against _C.A.R.L.E.S._! In it, there's the brisca player algorithm adapted for the simulation (further detail on the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/RLP_SPRINT_5%20-%20Final%20Report.pdf)), and we've also added some of the Human Interaction part of the project, as _C.A.R.L.E.S._ speaks and grunts during the match.
 
 Here's a little demo of the game, but you can download it yourself! See the [Downloads section](#Downloads).
 
