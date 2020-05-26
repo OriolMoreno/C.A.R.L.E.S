@@ -95,6 +95,7 @@ The main mechanism consists of a 3-axis anthropomorphic arm, which allows moveme
 
 
 # Amazing contributions
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/braç.png" align="right" width="300"/>
 the three most important contributions that brings this robot are:
  * Entertainment for seniors:   it is designed to entertain the elderly, for whom robots are a whole new thing
  * Classic Game Automation, the brisca: we give life to a classic and mythical game like the brisca combining it with technology and having it be even more enjoyable
@@ -108,7 +109,7 @@ This is the exactly Hardware Shceme that we didn't make due to coronavirus but w
 
 # 3D pieces
 Edited and personalitzed pices for C.A.R.L.E.S with name anotation.
-<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/braç.png" align="right" width="300"/>
+
 <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/girador.png" align="center" width="300" />
 <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/xeringa.png" align="left" width="300" />
 
