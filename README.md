@@ -43,7 +43,7 @@ To take the first contact, download this exe to see a so realistic simulation of
 
 
 # Requirements
-
+Here are some of the libraries we use in this project, all of the open sources
 - Python 3.8.x
 
 - numpy
@@ -78,14 +78,14 @@ All animation gifs are stored here: [C.A.R.L.E.S/gif](https://github.com/OriolMo
 
 
 2. Execute python script in each directory.
-  Yow will need to download the libraries requiered for each think if you don't have-it downloaded yet. All the pythonic libraris that we used are free.
+  You will need to download the libraries required for each think if you don't have-it downloaded yet. All the pythonic libraries that we used are free.
 
 3. Add on or two stars to this repo if you like it :smiley:. 
 
 
 # Description
-C.A.R.L.E.S is a robot capable of playing 1vs1 (Human vs AI) games in the tipical spanish brisca game.
-The main mechanism consists of a 3-axis anthropomorphic arm, which allows movement in a circular area on a board. At the end of the last shaft is a manipulator formed by a suction cup, which is controlled by a pneumatic mechanism with a servomotor and a syringe. The board adapts to the course of the arm, while maintaining as much as possible the typical layout of the brisca game. The robot's hand is on its right and elevated so that it can have a camera inside the box that holds them and thus be able to perform a card recognition by computer vision. Each player's cards, trump card and deck are in the center of the board. There is also a structure to have elevated a second camera that controls the playing area. Finally, to the left of the arm is a mechanism that allows the robot to spin a card. However, this part of the robot will not be able to be carried out for logical reasons in a pandemic situation. Then the project focuses on developing exclusively the robot software and being able to polish each module as a group and as a whole. In C.A.R.L.E.S it is able to:<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/cartas.png" align="right" width="300" alt="header pic"/>
+C.A.R.L.E.S is a robot capable of playing 1vs1 (Human vs AI) games in the typical Spanish brisca game.
+The main mechanism consists of a 3-axis anthropomorphic arm, which allows movement in a circular area on a board. At the end of the last shaft is a manipulator formed by a suction cup, which is controlled by a pneumatic mechanism with a servomotor and a syringe. The board adapts to the course of the arm, while maintaining as much as possible the typical layout of the brisca game. The robot's hand is on its right and elevated so that it can have a camera inside the box that holds them and thus be able to perform card recognition by computer vision. Each player's cards, trump card and deck are in the center of the board. There is also a structure to have elevated a second camera that controls the playing area. Finally, to the left of the arm is a mechanism that allows the robot to spin a card. However, this part of the robot will not be able to be carried out for logical reasons in a pandemic situation. Then the project focuses on developing exclusively the robot software and being able to polish each module as a group and as a whole. In C.A.R.L.E.S it is able to:<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/cartas.png" align="right" width="300" alt="header pic"/>
 - Recognize cards with the vision module (number and stick).
 - Play a brisket game with an AI algorithm that will try to beat the opponent.
 - Control the actions to be performed (start and end game, steal a card, know that it is the turn of the shift, etc.) by means of voice commands that the human will use during execution.
@@ -102,13 +102,13 @@ the three most important contributions that brings this robot are:<img src="http
 - Voice recognition with human interaction: Designed to bring the user closer to the robot and allows it to communicate with it to a certain extent.
 
 # Hardware Scheme
-This is the exactly Hardware Shceme that we didn't make due to coronavirus but we expect its wright.
+This is the exactly Hardware Scheme that we didn't make due to coronavirus but we expect its wright.
 
 <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/carles_sketch_bb.png" align="center" width="600" alt="header pic"/>
 
 
 # 3D pieces
-Edited and personalitzed pices for C.A.R.L.E.S with name anotation.
+Edited and personalized pieces for C.A.R.L.E.S with name annotation.
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/girador.png)
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/xeringa.png)
@@ -122,7 +122,7 @@ Edited and personalitzed pices for C.A.R.L.E.S with name anotation.
       
 # Software Architecture
 this is the software architecture of the project with the hardware components to, is not the ones we have finally done cause the changes of the evaluation method made us change a few thinks.
-We finally separte from the prject a few parts and we have maded them a partt. Thes are the parts we separate:
+We finally separate from the project a few parts and we have made them a part. These are the parts we separate:
 * The module of Computer Vision
 * The human interaction 
 * The realistic cinematic.
@@ -148,13 +148,13 @@ We finally separte from the prject a few parts and we have maded them a partt. T
 
 ## Inverse kinematics algorithm visualizer
 
-This is a animation example of the traslation simulation program that we made from zero.
+This is a animation example of the translation simulation program that we made from zero.
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/ik.gif)
 
 
 ## Big simulation
-If you want to see a video of 1 minut of all funcionalitis take a look at this video:
+If you want to see a video of 1 minute of all functionalities take a look at this video:
 https://www.youtube.com/watch?v=kZnISXRfvJQ&feature=youtu.be
 
 
