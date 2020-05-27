@@ -41,17 +41,22 @@ This is where you come in!
 
 
 # Description
-_C.A.R.L.E.S_ is a robot capable of playing 1vs1 (Human vs AI)  the typical Spanish game of brisca.
-The main mechanism consists of a 3-axis anthropomorphic arm, which allows movement in a circular area on the board. At the end of the last shaft there is a manipulator formed by a suction cup, which is controlled by a pneumatic mechanism with a servomotor and a syringe. This mechanism allows the robot to pick up and move cards. The board adapts to the course of the arm, while maintaining as much as possible the typical layout of the brisca game. The robot's hand is on its right and elevated so it is possible to fit a camera inside the box that holds them and thus be able to perform card recognition by computer vision. This way the robot is aware of his cards values. Each player's cards, trump card and deck are in the center of the board. There is also second camera lifted from the table that controls the playing area. This way it is also aware of the cards played. Finally, to the left of the arm there is a mechanism that allows the robot to spin a card.
+_C.A.R.L.E.S_ is a robot capable of playing 1vs1 (Human vs AI)  matches of the typical Spanish game card game Brisca.
 
-However, the hardware planification we just described was not possible to perform due to education context in COVID-19 pandemic. We had to change the main focus to pure software development and the polishing of each module itself and as a whole.
+The main mechanical part is a 3-axis anthropomorphical arm, which allows movement in a semicircular area on the board. At the end of the last joint there is a manipulator which in our case is a suction cup, able to pick up and move cards without any trouble. The pneumatic circuit is powered by the void created with a medical syringe, activated through a servomotor. 
+
+The board adapts to the workspace of the arm, while maintaining the typical layout of the brisca game  as much as possible. The robot's hand is on its right and elevated so it is possible to fit a camera inside the box that holds them and thus be able to perform card recognition via computer vision. This way the robot is aware of what cards it has on it's hand. 
+Each player's cards, the *triumfo* card and deck are in the center of the board. There is also a second camera lifted from the table that oversees the playing area. This way C.A.R.L.E.S. is also aware of the cards that are being played. 
+Finally, to the left of the arm there is a mechanism that allows the robot to spin a card.
+
+However, the hardware planification we just described was not possible to perform due to the educational context we found ourselves in. We had to change the main focus to pure software development and the polishing of each module itself and as a whole.
 
 _C.A.R.L.E.S_ is able to:<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/cartas.png" align="right" width="300" alt="header pic"/>
-- Recognize cards with the computer vision module (number and stick of the card).
+- Recognize cards with the computer vision module (number and suit of the card).
 - Play a brisca game with an AI algorithm that will do its best to outsmart the opponent.
-- Control the actions to be performed (start and end game, steal a card, know that it is the turn of the shift, etc.) by voice commands that the human will say during the game.
-- Calculate the angles of rotation of the arm motors in order to move the manipulator (including the one that controls the pressure of the suction cup) from one point to another, according to the movements that should be made in case of its physical creation.
-- Unification of all the modules in a single workflow, which should be what the physical robot had.
+- Control the actions to be performed (start and end game, steal a card, knowing it's C.A.R.L.E.S.' turn, etc.) by voice commands that the human will say during the game.
+- Calculate the angles of rotation of the arm motors in order to move the manipulator (including the one that controls the pressure of the suction cup) from one point to another, according to the positions of everything else on the board.
+- Unification of all the modules in a single workflow, which is what the physical robot would have had.
 
 
 
@@ -75,13 +80,14 @@ In order to recreate the physical model of the robot, we had to design some of i
 <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/xeringa.png" width="250" align="center"/>
 <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/girador.png" width="200" align="center"/>
 <img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/deck.png" width="250" align="center"/>
-<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/pila.png" width="200" align="left"/>
+<img src="https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/imgs/pila.png" width="200" align="center"/>
 
 <!--![2](imgs/cam.png =100x)
 ![2](imgs/xeringa.png =250x)
 ![](imgs/girador.png =200x)
 ![](imgs/deck.png =250x)
 ![](imgs/pila.png =200x)-->
+
 
 Files are avaliable under [stl](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/stl/). Of course they could be replaced by any other model or created with other methods rather than 3D printing.
 
@@ -96,7 +102,7 @@ In order to develop the idea we had, we must divide the software architecture in
 * Voice Recognition
 * Controller: communication of all the above modules.
 
-Initially all of them must had to work together, but after the project's objectives changed we decided to do different simulations in order to reproduce the functionality we were aiming. These are:
+Initially all of them should have worked together, but after the project's objectives changed we decided to do different simulations in order to reproduce the functionality we were aiming for. These are:
 * Computer Vision module: card recognition (as an independent simulation)
 * Inverse Kinematics Simulation: not only doing the math but also visualizing it.
 * Fully functional 3D game: This simulation involves 3D models, animation and game development to have a fully inmersive experience and getting the closest image to what the project was going to look like.
@@ -140,7 +146,7 @@ Requirements: Python 3 and its libraries google-cloud-speech, google-auth-oauthl
 ### Videogame Simulation
 Finally, to show how it would have been had we been able to implement on harware, we've build a simulation videogame, in which you can play full Brisca matches against _C.A.R.L.E.S._! In it, there's the brisca player algorithm adapted for the simulation (further detail on the [report](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/reports/RLP_SPRINT_5%20-%20Final%20Report.pdf)), and we've also added some of the Human Interaction part of the project, as _C.A.R.L.E.S._ speaks and grunts during the match.
 
-Here's a little demo of the game, but you can download it and try uit by yourself! See the [Downloads section](#Downloads).
+Here's a little demo of the game, but you can download it and try it yourself! See the [Downloads section](#Downloads).
 
 ![2](https://github.com/OriolMoreno/C.A.R.L.E.S/blob/master/gif/simulació%20brisca.gif)
 
